@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normilize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container flex header__container">
+            <picture>
+                <source srcset="img/Cent.png" media="(min-width: 376px)">
+                <source srcset="img/Logo-small.png" media="(min-width: 375px)">
+                <img class="header__logo" src="img/Logo-small.png" alt="logo">
+            </picture>
+            <nav class="header__nav">
+                <a class="header__link" href="#">кейсы</a>
+                <a class="header__link" href="#">о нас</a>
+                <a class="header__link" href="#">контакты</a>
+                <a class="header__link" href="#">новости</a>
+                <a class="header__link" href="#">клиенты</a>
+            </nav>
+            <button class="header__burger-btn">
+                <svg class="header__burger-svg" width="28" height="14" viewBox="0 0 28 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line x1="28" y1="1" y2="1" stroke="white" stroke-width="2" />
+                    <line x1="28" y1="7" y2="7" stroke="white" stroke-width="2" />
+                    <line x1="28" y1="13" y2="13" stroke="white" stroke-width="2" />
+                </svg>
+            </button>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container hero__container">
+            <h1 class="hero__title">Больше чем тенге</h1>
+            <div class="hero__info flex">
+                <a class="hero__address-link" href="#">Казань, Карла Маркса 5</a>
+                <img class="hero__letter-pic" src="img/letter.png" alt="Написать нам">
+                <a class="hero__email" href="#">info@cent</a>
+            </div>
+        </div>
+    </section>
+    <div class="map display-none">
+        <picture>
+            <source srcset="img/map.png" media="(min-width: 768px)">
+            <source srcset="img/map-small.png" media="(min-width: 375px)">
+            <img class="map-pic" src="img/map.png" alt="map">
+        </picture>
+    </div>
+    
+    <section class="about-us">
+        <div class="container flex about-us__container">
+            <h2 class="about-us__title">О нас</h2>
+            <div class="about-us__right-part">
+                <p class="about-us__paragraph">Цент –– это агенство, представляющее полный
+                    комплекс услуг в области digital - маркетинга
+                    и креатива. Агентсво обладает крупнейшей
+                    инфраструктурой в социальных сетях
+                    в мире.</p>
+                <a class="about-us__link-one" href="#">Связаться</a>
+                <a class="about-us__link-two" href="#">Больше о нас</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Всплывающий блок Больше о нас-->
+    <div class="more-info">
+        <div class="container more-info__container flex">
+            
+            <div class="more-info-item more-info-mass-media">
+                    <h3 class="more-info__h3">СМИ</h3>
+                    <div class="more-info__count">> 2 МЛН</div>
+                    <div class="more-info__event">ЕЖЕМЕСЕЧНАЯ АУДИТОРИЯ</div>
+            </div>
+
+                <div class="more-info-item more-info-nets">
+                    <h3 class="more-info__h3 more-info__h3-nets">СОЦСЕТИ</h3>
+                    <div class="more-info__count">> 14 МЛН</div>
+                    <div class="more-info__event">ЕЖЕМЕСЕЧНЫЙ ОХВАТ</div>
+                </div>
+
+                <div class="more-info-item more-info-pr">
+                    <h3 class="more-info__h3 more-info__h3-pr">PR</h3>
+                    <div class="more-info__count">> 30</div>
+                    <div class="more-info__event">РЕШЕННЫХ
+                        ИНФОРМАЦИОННЫХ
+                        КРИЗИСОВ</div>
+                    </div>
+
+                <div class="more-info-item more-info-creativ">
+                    <h3 class="more-info__h3">КРЕАТИВ</h3>
+                    <div class="more-info__count">> 150</div>
+                    <div class="more-info__event">ИНФОПОВОДОВ
+                        ФЕДЕРАЛЬНОГО УРОВНЯ</div>
+                    </div>
+
+                <div class="more-info-item more-info-blogers">
+                    <h3 class="more-info__h3">БЛОГЕРЫ</h3>
+                    <div class="more-info__count">> 1000</div>
+                    <div class="more-info__event">ИНТЕГРАЦИИ
+                        С ИНФЛЮЕНСЕРАМИ </div>
+                    </div>
+
+                <div class="more-info-item more-info-events">
+                    <h3 class="more-info__h3">МЕРОПРИЯТИЯ</h3>
+                    <div class="more-info__count">> 400</div>
+                    <div class="more-info__event">СОБЫТИЙ РЕГИОНАЛЬНОГО
+                        И ФЕДЕРАЛЬНОГО МАСШТАБА
+                        С ОБЩИМ ОХВАТОМ 45 МЛН</div>
+                    </div>
+                </div>
+        </div>
+    
+
+    <!--Конец-->
+
+    <div class="pizza__info display-none">
+        <div class="container">
+            <button class="pizza__info__btn">Назад<svg width="37" height="8" viewBox="0 0 37 8" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.646446 3.64645C0.451183 3.84171 0.451183 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646446 3.64645ZM37 3.5L1 3.5V4.5L37 4.5V3.5Z"
+                        fill="white" />
+                </svg> </button>
+
+            <div class="pizza__info__main flex">
+                <div class="pizza__info__left-blog">
+                    <h2 class="pizza__info__h2">Итоги пиццы 2021</h2>
+                    <span class="pizza__info__span">Ежегодная премия</span>
+                    <p class="pizza__info__paragraph">Если экстраполировать 
+                        культуру пиццы на Казань, то можно смело сказать, что 
+                        казанцы «отменили» Баумана. Ее любят туристы и обходят 
+                        местные, и такое положение давно пора менять. Перемены 
+                        с целью вернуть главную пешеходную улицу горожанам уже
+                         начались, и пока они только на самом старте.
+                        24 мая в рамках дискуссионно-образовательной программы 
+                        «Городские модераторы» редакция Enter совместно с мэрией 
+                        Казани собрала желающих на первой дискуссии о том, какой 
+                        должна стать улица Баумана в результате переустройства. 
+                        Коротко пересказываем, о чем говорили участники и к чему 
+                        они пришли.</p>
+                </div>
+                <div class="pizza__info__right-blog">
+                    <picture>
+                        <source srcset="img/pizza-info-pic.jpg" media="(min-width: 1440px)">
+                        <img src="img/pizza-info-pic.jpg" alt="pizza-pic">
+                    </picture>
+
+                </div>
+
+            </div>
+            <p class="pizza__info__last-paragraph">Основная задача
+                 властей — поработать над улицей так, чтобы сделать
+                  ее привлекательной для разных клиентских групп. Для
+                   кого должна быть улица — вопрос открытый. Участники 
+                   дискуссии из зала предложили отказаться от обозначений
+                    «туристам» и «жителем» и определить более точные критерии
+                     с помощью грамотного продуктолога по их мнению,
+                      когда мы поймем, кому принадлежит Баумана, тогда
+                       и узнаем, какую ценность она в себе несет. Спикер 
+                       и совладелец бара Kommunalka Андрей Блинов предложил
+                        сохранить Баумана универсальной, ведь уже сейчас 
+                        в разное время она работает на разный сегмент граждан.</p>
+        </div>
+
+
+
+    </div>
+
+    <section class="cases">
+        <div class="container cases__container">
+            <h2 class="cases__title">Кейсы</h2>
+            <div class="cases__two-parts flex">
+                <div class="cases__left-part">
+
+                    <div id="pizza-open">
+                        <img class="cases__img" src="img/cases-left-1.jpg" alt="pic1">
+                        <div class="cases__figcaption-big">Итоги года 2021</div>
+                        <div class="cases__figcaption-small">Ежегодная премия</div>
+                    </div>
+
+                    <img class="cases__img" src="img/cases-left-2.jpg" alt="pic2">
+                    <div class="cases__figcaption-big">Enter x Водоканал</div>
+                    <div class="cases__figcaption-small">Рекламная коммуникация</div>
+
+                    <img class="cases__img" src="img/cases-left-3.jpg" alt="pic3">
+                    <div class="cases__figcaption-big">Итоги года 2021</div>
+                    <div class="cases__figcaption-small">Ежегодная премия</div>
+
+                    <img class="cases__img" src="img/cases-left-4.jpg" alt="pic4">
+                    <div class="cases__figcaption-big">Enter x Водоканал</div>
+                    <div class="cases__figcaption-small">Рекламная коммуникация</div>
+                </div>
+
+                <div class="cases__right-part">
+
+                    <img class="cases__img cases__img-one" src="img/cases-right-1.jpg" alt="pic1">
+                    <div class="cases__figcaption-big">Фестиваль «Профсоюзная»</div>
+                    <div class="cases__figcaption-small cases__figcaption-small-one">Уличный фестиваль
+                    </div>
+
+
+                    <img class="cases__img" src="img/cases-right-2.jpg" alt="pic2">
+                    <div class="cases__figcaption-big">Мой прекрасный
+                        Татарстан</div>
+                    <div    class="cases__figcaption-small">Фотомарафон</div>
+
+
+                    <img class="cases__img" src="img/cases-right-3.jpg" alt="pic3">
+                    <div class="cases__figcaption-big">Фестиваль «Профсоюзная»</div>
+                    <div class="cases__figcaption-small">Уличный фестиваль</div>
+
+
+                    <img class="cases__img" src="img/cases-right-4.jpg" alt="pic4">
+                    <div class="cases__figcaption-big">Мой прекрасный
+                        Татарстан</div>
+                    <div class="cases__figcaption-small cases__figcaption-small-one">Фотомарафон</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="actives">
+        <h2 class="actives__title">Наши активы</h2>
+        <!-- Slider main container -->
+        <div class="swiper actives__swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper actives__swiper-wrapper">
+                <!-- Slides -->
+                <!--1-->
+                <div class="swiper-slide actives__swiper-slide">
+                    <a href="#">
+                        <picture class="actives__pic">
+                            <source srcset="img/act-1.png" media="(min-width: 1440px)">
+                            <img class="actives__img" src="img/act-1.png" alt="pic1">
+                        </picture>
+                    </a>
+                </div>
+                <!--2-->
+                <div class="swiper-slide actives__swiper-slide">
+                    <a href="#">
+                        <picture class="actives__pic">
+                            <source srcset="img/act-2.png" media="(min-width: 1440px)">
+                            <img class="actives__img" src="img/act-2.png" alt="pic2">
+                        </picture>
+                    </a>
+                </div>
+                <!--3-->
+                <div class="swiper-slide actives__swiper-slide">
+                    <a href="#">
+                        <picture class="actives__pic">
+                            <source srcset="img/act-3.png" media="(min-width: 1440px)">
+                            <img class="actives__img" src="img/act-3.png" alt="pic3">
+                        </picture>
+                    </a>
+
+                </div>
+                <!--4-->
+                <div class="swiper-slide actives__swiper-slide">
+                    <a href="#">
+                        <picture class="actives__pic">
+                            <source srcset="img/act-4.png" media="(min-width: 1440px)">
+                            <img class="actives__img" src="img/act-4.png" alt="pic4">
+                        </picture>
+                    </a>
+
+                </div>
+                <!--5-->
+                <div class="swiper-slide actives__swiper-slide">
+                    <a href="#">
+                        <picture class="actives__pic">
+                            <source srcset="img/act-5.png" media="(min-width: 1440px)">
+                            <img class="actives__img" src="img/act-5.png" alt="pic5">
+                        </picture>
+                    </a>
+
+                </div>
+                <!--6-->
+                <div class="swiper-slide actives__swiper-slide">
+                    <a href="#">
+                        <picture class="actives__pic">
+                            <source srcset="img/act-6.png" media="(min-width: 1440px)">
+                            <img class="actives__img" src="img/act-6.png" alt="pic6">
+                        </picture>
+                    </a>
+
+                </div>
+                <!--7-->
+                <div class="swiper-slide actives__swiper-slide">
+                    <a href="#">
+                        <picture class="actives__pic">
+                            <source srcset="img/act-7.png" media="(min-width: 1440px)">
+                            <img class="actives__img" src="img/act-7.png" alt="pic7">
+                        </picture>
+                    </a>
+
+                </div>
+                <!--8-->
+                <div class="swiper-slide actives__swiper-slide">
+                    <a href="#">
+                        <picture class="actives__pic">
+                            <source srcset="img/act-8.png" media="(min-width: 1440px)">
+                            <img class="actives__img" src="img/act-8.png" alt="pic8">
+                        </picture>
+                    </a>
+
+                </div>
+            </div>
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+
+    <div class="clients">
+        <picture>
+            <source srcset="img/our-clients-pic.png" media="(min-width: 376px)">
+            <source srcset="img/our-clients-pic-small.png" media="(min-width: 320px)">
+            <img class="clients__pic" src="img/our-clients-pic.png" alt="Наши клиенты">
+        </picture>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer__container flex">
+            <div class="footer__left">
+                <h2 class="footer__title">Контакты</h2>
+                <ul class="footer__list">
+                    <li class="footer__list-item">8 800 700 60 50</li>
+                    <li class="footer__list-item">info@cent</li>
+                    <li class="footer__list-item">Казань, Карла Маркса 9</li>
+
+                </ul>
+
+                <p class="footer__agency-name">Агентство Cent, 2017</p>
+            </div>
+            <div class="footer__right">
+                <form class="footer__forma" method="POST" action="">
+                    <input class="input footer__name" type="text" placeholder="Ваше имя">
+                    <input class="input footer__email" type="email" placeholder="Email">
+                    <input class="input footer__tel" type="tel" placeholder="Телефон">
+                    <input class="input footer__search" type="text" placeholder="Что вы ищете">
+                    <textarea class="footer__textarea" placeholder="Сообщение"></textarea>
+                    <button class="footer__btn" type="submit">Отправить
+                        <svg width="55" height="8" viewBox="0 0 55 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M54.3536 4.35355C54.5488 4.15829 54.5488 3.84171 54.3536 3.64645L51.1716 0.464466C50.9763 0.269204 50.6597 0.269204 50.4645 0.464466C50.2692 0.659728 50.2692 0.976311 50.4645 1.17157L53.2929 4L50.4645 6.82843C50.2692 7.02369 50.2692 7.34027 50.4645 7.53553C50.6597 7.7308 50.9763 7.7308 51.1716 7.53553L54.3536 4.35355ZM0 4.5H54V3.5H0L0 4.5Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js.js"></script>
+</body>
+</html>
